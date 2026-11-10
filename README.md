@@ -4,7 +4,7 @@
 
 **在线地址：<https://47.117.247.11/shop>**
 
-![首页](docs/cover.png)
+![首页](assets/poster-wide.jpg)
 
 ## 特点
 
