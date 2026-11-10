@@ -4,6 +4,8 @@
 
 **在线地址：<https://47.117.247.11/shop>**
 
+源码镜像：[Gitee](https://gitee.com/lushengjie/xiaolu-studio-site) · [GitHub](https://github.com/MrWhiteSmall/xiaolu-studio-site)
+
 ![首页](assets/poster-wide.jpg)
 
 ## 特点
