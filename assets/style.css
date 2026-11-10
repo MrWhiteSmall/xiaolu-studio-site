@@ -76,12 +76,21 @@ main > section{ max-width:var(--maxw); margin:0 auto; padding:0 var(--pad); }
 .block{ padding-top:clamp(60px,8.2vw,108px); padding-bottom:clamp(60px,8.2vw,108px); }
 
 /* ── 头版 ── */
-.frontis{ margin:0; max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad); }
-.frontis img{ display:block; width:100%; height:auto; }
-.frontis figcaption{
-  margin:10px 0 0; text-align:right;
-  font-size:.62rem; letter-spacing:.22em; text-transform:uppercase;
-  color:rgba(20,19,15,.38);
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0;
+}
+.sr-h1{ display:none; }
+
+/* 桌面端：整张海报代替文字头版；手机端字号更清楚，用原生排版 */
+.frontis{ display:none; }
+@media (min-width:760px){
+  .frontis{
+    display:block; max-width:var(--maxw); margin:0 auto clamp(56px,7vw,92px);
+  }
+  .frontis img{ display:block; width:100%; height:auto; }
+  .sr-h1{ display:block; }
+  .hero{ display:none; }
 }
 
 .hero{
