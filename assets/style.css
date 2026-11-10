@@ -76,6 +76,14 @@ main > section{ max-width:var(--maxw); margin:0 auto; padding:0 var(--pad); }
 .block{ padding-top:clamp(60px,8.2vw,108px); padding-bottom:clamp(60px,8.2vw,108px); }
 
 /* ── 头版 ── */
+.frontis{ margin:0; max-width:var(--maxw); margin-inline:auto; padding:0 var(--pad); }
+.frontis img{ display:block; width:100%; height:auto; }
+.frontis figcaption{
+  margin:10px 0 0; text-align:right;
+  font-size:.62rem; letter-spacing:.22em; text-transform:uppercase;
+  color:rgba(20,19,15,.38);
+}
+
 .hero{
   position:relative;
   padding-top:clamp(64px,11vw,128px);
