@@ -42,14 +42,12 @@ location ^~ /shop/ {
     alias /var/www/shop/;
     index index.html;
     limit_req zone=shop_zone burst=40 nodelay;
-
-    add_header Cache-Control "no-cache" always;
-    add_header X-Content-Type-Options "nosniff" always;
-    add_header X-Frame-Options "SAMEORIGIN" always;
-    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
-    add_header Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; base-uri 'none'; form-action 'none'" always;
 }
 ```
+
+同一个 `location` 里再追加响应头：`Cache-Control: no-cache`、`X-Content-Type-Options: nosniff`、
+`X-Frame-Options: SAMEORIGIN`、`Referrer-Policy: strict-origin-when-cross-origin`，
+以及 CSP —— 只允许自身资源、内联样式和数据 URL 图片。
 
 ```bash
 rsync -av -e "ssh -i ~/.ssh/ecs_image_studio" ./ root@47.117.247.11:/var/www/shop/
