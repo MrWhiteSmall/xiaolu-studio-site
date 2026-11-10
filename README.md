@@ -17,14 +17,10 @@
 
 ## 结构
 
-```
-.
-├── index.html          # 整页结构与文案
-├── assets/
-│   ├── style.css       # 全部样式
-│   └── app.js          # 滚动进场动效
-└── docs/               # README 用截图
-```
+- `index.html` — 整页结构与文案
+- `assets/style.css` — 全部样式
+- `assets/app.js` — 滚动进场动效
+- `docs/` — 本 README 用到的截图
 
 页面共六节：01 关于 · 02 提供的服务 · 03 做过的东西 · 04 怎么合作 · 05 为什么找我 · 06 聊聊你的项目。
 
@@ -62,9 +58,13 @@ ssh -i ~/.ssh/ecs_image_studio root@47.117.247.11 'chmod -R a+rX /var/www/shop'
 
 文件必须对 `www-data` 可读，`scp` 落地默认是 600，会 403。
 
+## 做过的东西
+
+![案例](docs/cases.png)
+
 ## 移动端
 
-<img src="docs/mobile.png" width="300" alt="移动端">
+![移动端](docs/mobile.png)
 
 ## 说明
 
