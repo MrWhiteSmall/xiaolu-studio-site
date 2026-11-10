@@ -60,10 +60,6 @@ ssh -i ~/.ssh/ecs_image_studio root@47.117.247.11 'chmod -R a+rX /var/www/shop'
 
 ![案例](docs/cases.png)
 
-## 移动端
-
-![移动端](docs/mobile.png)
-
 ## 说明
 
 Gitee Pages 已停止服务，所以页面没有托管在 Gitee 上，而是放在自己的服务器；
