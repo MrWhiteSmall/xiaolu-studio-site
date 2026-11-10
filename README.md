@@ -2,7 +2,7 @@
 
 一个纯静态单页站：全栈开发 / AI Agent / 图文视觉的个人介绍与案例展示。
 
-**在线地址：<https://47.117.247.11/shop>**
+**在线地址：<https://47.117.247.11/shop>**（镜像：<https://mrwhitesmall.github.io/xiaolu-studio-site/>）
 
 源码镜像：[Gitee](https://gitee.com/lushengjie/xiaolu-studio-site) · [GitHub](https://github.com/MrWhiteSmall/xiaolu-studio-site)
 
